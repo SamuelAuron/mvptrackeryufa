@@ -66,7 +66,7 @@ export default function MvpStatusList() {
         </h2>
         {deadMvps.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {deadMvps.map((mvp) => (
+            {deadMvps.map((mvp: MvpData) => (
               <div
                 key={mvp.mob_id}
                 className="bg-gray-800 border border-red-600 rounded-2xl p-4 shadow-lg hover:shadow-red-500/30 transition"
@@ -74,7 +74,7 @@ export default function MvpStatusList() {
                 <div className="flex justify-between items-center mb-2">
                   <img
               src={`http://db.irowiki.org/image/monster/${mvp.mob_id}.png`}
-              alt={mvp.mob_id}
+              alt={`${mvp.mob_id}`}
               className="w-16 h-16 mx-auto mb-2"
             />
                   <span className="font-bold text-lg">ID {mvp.mob_id}</span>
@@ -115,7 +115,7 @@ export default function MvpStatusList() {
               >
                 <img
               src={`http://db.irowiki.org/image/monster/${mvp.mob_id}.png`}
-              alt={mvp.mob_id}
+              alt={`${mvp.mob_id}`}
               className="w-16 h-16 mx-auto mb-2"
             />
                 <span className="font-bold text-lg block mb-2">ID {mvp.mob_id}</span>

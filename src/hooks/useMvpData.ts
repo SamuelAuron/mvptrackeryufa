@@ -8,14 +8,14 @@ interface MvpKillData {
   guild: string | null;
   timestamp: string;
 }
-
+/*
 interface MvpInfo {
   id: number;
   name: string;
   level: number;
   mapname: string;
   image: string;
-}
+}*/
 
 interface CombinedMvp {
   mob_id: number;

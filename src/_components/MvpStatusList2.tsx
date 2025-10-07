@@ -1,4 +1,4 @@
-import { useMvpData } from "../hooks/useMvpData";
+/*import { useMvpData } from "../hooks/useMvpData";
 import { splitMvpsByStatus } from "../utils/splitMvpsByStatus";
 
 export default function MvpList2() {
@@ -31,4 +31,4 @@ console.log(mvpsData)
       </ul>
     </div>
   );
-}
+}*/

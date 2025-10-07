@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 
 interface MvpData {
   mob_id: number;
@@ -54,14 +54,14 @@ export default function MvpStatus() {
       </header>
 
       <div className=" grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4 w-auto">
-        {mvps.map((mvp) => (
+        {mvps.map((mvp: MvpData) => (
           <div
             key={mvp.mob_id}
             className="bg-white shadow-md rounded-2xl p-4 hover:shadow-xl transition"
           >
             <img
               src={`http://db.irowiki.org/image/monster/${mvp.mob_id}.png`}
-              alt={mvp.mob_id}
+              alt={`${mvp.mob_id}`}
               className="w-16 h-16 mx-auto mb-2"
             />
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
@@ -90,4 +90,4 @@ export default function MvpStatus() {
       </div>
     </div>
   )
-}
+}*/
